@@ -292,7 +292,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-bg:hover,
-.team-list-bg:active {
+.team-list-bg:focus {
   background-color: #404bbf;
 }
 .team-list-svg {
@@ -386,11 +386,6 @@ button {
   height: 100%;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* .portfolio-list-hover {
-}
-.portfolio-list-hover:hover {
-} */
-
 .team-text-hover {
   color: #f4f4fd;
   font-size: 16px;
@@ -474,7 +469,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-list-bg-two:hover,
-.team-list-bg-two:active {
+.team-list-bg-two:focus {
   background-color: #31d0aa;
 }
 .li-footer-items {
