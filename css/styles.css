@@ -291,11 +291,13 @@ button {
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-list-bg:hover {
+.team-list-bg:hover,
+.team-list-bg:active {
   background-color: #404bbf;
 }
 .team-list-svg {
   margin: 12px;
+  fill: #f4f4fd;
 }
 .team-list-item {
   background-color: #ffffff;
@@ -355,13 +357,11 @@ button {
 .portfolio-list-item {
   gap: 8px;
   width: calc((100% - 48px) / 3);
-
-  background: var(--WHITE, #fff);
-}
-.portfolio-list-item:hover {
   box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  background: var(--WHITE, #fff);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list-wrap {
@@ -473,7 +473,8 @@ button {
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.team-list-bg-two:hover {
+.team-list-bg-two:hover,
+.team-list-bg-two:active {
   background-color: #31d0aa;
 }
 .li-footer-items {
