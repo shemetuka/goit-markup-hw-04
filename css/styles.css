@@ -150,13 +150,16 @@ button {
     url(../images/people-office1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+
   max-width: 1440px;
   background-size: cover;
+
+  margin: 0 auto;
 }
 
-/* .hero-conteiner {
-} */
+.hero-conteiner {
+  justify-content: center;
+}
 .section-first-title {
   color: var(--WHITE, #fff);
   text-align: center;
@@ -369,13 +372,6 @@ button {
   overflow: hidden;
 }
 
-.portfolio-list-wrap:hover {
-  transform: translateY(0%);
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-  cursor: pointer;
-}
-
 .team-text-hover {
   background: #4d5ae5;
   position: absolute;
@@ -393,6 +389,11 @@ button {
   font-size: 16px;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+  cursor: pointer;
+}
+
+.portfolio-list-item:hover .team-text-hover {
+  transform: translateY(0%);
 }
 
 .portfolio-list-setting {
